@@ -1,11 +1,13 @@
 import React from 'react';
-
-const Logout = () => {
+import IMG from '../assets/out.png'
+const LogoutButton = () => {
   return (
-    <button>
-      Красивый значек выйти
+    <button onClick={() => {
+      window.location.href = "http://localhost:2000/logout"
+    }}>
+      <img src={IMG} alt="out"/>
     </button>
   );
 };
 
-export default Logout;
+export default LogoutButton;
